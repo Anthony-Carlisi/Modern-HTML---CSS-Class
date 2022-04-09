@@ -43,6 +43,15 @@
   position: relative;
 }
 
+.message::before {
+  position: absolute;
+  top: 10px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid #333;
+}
+
 .avatar {
   background-attachment: fixed;
   z-index: 0;
