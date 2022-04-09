@@ -63,8 +63,8 @@ div[class^='message-'] {
 .message-recipient .avatar {
   grid-area: 2 / 1 / 3 / 2;
   align-self: end;
-  width: 4vmin;
-  height: 4vmin;
+  width: 3rem;
+  height: 3rem;
   margin-bottom: 2px;
 }
 
@@ -102,23 +102,24 @@ div[class^='message-'] {
 }
 
 .message-recipient.group {
-  grid-template-columns: 4vmin auto;
+  grid-template-columns: 3.2rem auto;
   grid-column-gap: 0.8rem;
 }
 
 .message-sender {
-  grid-template-columns: auto min-content;
+  /* grid-template-columns: auto min-content; */
   text-align: end;
 }
 
 .error {
   grid-area: 2 / 2 / 3 / 3;
-  background: url('./sms-error.png') no-repeat center center/cover;
   align-self: center;
-  width: 4vmin;
-  height: 4vmin;
-
+  width: auto;
+  color: red;
   margin-left: 0.8rem;
+}
+i {
+  font-size: 1.5rem;
 }
 
 .message-sender .message {

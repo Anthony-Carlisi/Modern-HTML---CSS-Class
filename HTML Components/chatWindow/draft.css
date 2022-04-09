@@ -26,30 +26,31 @@
   font-weight: 600;
 }
 
-.flex-wrapper {
-  display: flex;
-  background-color: #f4f4f4;
-  border: 1px solid #333;
-  /* flex: 1 1; */
+.flex-item {
+  overflow: hidden;
 }
 
 .message {
-  flex-wrap: wrap;
+  margin-left: 5rem;
   border-radius: 1.25rem;
   width: fit-content;
-  /* padding: 8px 15px; */
+  padding: 0.5rem 1rem;
   /* word-wrap: normal; */
   /* margin-left: 10px; */
   background-color: #e8e8ea;
   color: black;
-  /* max-width: 75%; */
+  max-width: 75%;
   position: relative;
 }
 
 .avatar {
-  height: 2em;
+  background-attachment: fixed;
+  z-index: 0;
+  height: 4rem;
   width: auto;
-  align-self: flex-end;
+  position: relative;
+  top: -4rem;
+  overflow: hidden;
 
   /* flex: 1 4px; */
 }
