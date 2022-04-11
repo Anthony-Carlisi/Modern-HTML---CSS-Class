@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
 /* general styling */
 @font-face {
   font-family: 'SanFrancisco';
@@ -10,7 +17,7 @@
 .chat {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  /* max-width: 400px; */
   margin-left: auto;
   background-color: #fff;
   border: 1px solid #e5e5ea;
@@ -32,7 +39,7 @@ div[class^='message-'] {
   grid-template-rows: repeat(3, auto);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-
+  overflow-wrap: break-word;
   margin: 0 0.6rem;
 }
 
@@ -43,6 +50,7 @@ div[class^='message-'] {
 }
 
 .message {
+  /* display: flex; */
   width: fit-content;
   position: relative;
   border-radius: 1.25rem;
@@ -123,10 +131,12 @@ div[class^='message-'] {
 
 .message-sender .message {
   grid-area: 2 / 1 / 3 / 2;
-  margin-left: auto;
+  word-wrap: normal;
+  justify-self: end;
   text-align: left;
   color: white;
   background: #248bf5;
+  position: relative;
 }
 
 .message-sender .message.tail:before {
