@@ -115,7 +115,7 @@ div[class^='message-'] {
 }
 
 .message-sender {
-  /* grid-template-columns: auto min-content; */
+  grid-template-columns: auto min-content;
   text-align: end;
 }
 

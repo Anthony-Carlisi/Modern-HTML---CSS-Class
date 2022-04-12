@@ -13,79 +13,54 @@
       format('woff');
 }
 
-.chat {
-  display: flex;
-  flex-direction: column;
-  /* max-width: 400px; */
-  margin-left: auto;
-  background-color: #fff;
-  border: 1px solid #e5e5ea;
-  border-radius: 0.25rem;
-}
+.recipient-list {
+  display: grid;
+  grid-template-columns: min-content repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  /* grid-column-gap: 0px;
+  grid-row-gap: 0px; */
 
-.body-text {
-  width: 100%;
-  height: 52px;
-  margin-top: 5px;
+  height: 10rem;
   border-bottom: 1px solid #cacaca;
-}
 
-.text-chat {
-  display: flex;
+  line-height: 1;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 0.78rem;
+  font-size: 2rem;
   font-weight: 600;
-  color: #cacaca;
-}
+  color: #9b9b9b;
 
-.name {
-  color: #555555;
-}
-
-.head {
-  display: flex;
-  justify-content: space-between;
-}
-
-.flex-item {
-  overflow: hidden;
-}
-
-.message {
-  margin-left: 5rem;
-  border-radius: 1.25rem;
-  width: fit-content;
-  padding: 0.5rem 1rem;
-  /* word-wrap: normal; */
-  /* margin-left: 10px; */
-  background-color: #e8e8ea;
-  color: black;
-  max-width: 75%;
-  position: relative;
-}
-
-.message::before {
-  position: absolute;
-  top: 10px;
-  content: '';
-  width: 0;
-  height: 0;
-  border-top: 10px solid #333;
+  /* max-width: 400px; */
 }
 
 .avatar {
-  background-attachment: fixed;
-  z-index: 0;
-  height: 4rem;
+  grid-area: 1 / 1 / 3 / 2;
+  height: 5rem;
+  align-self: center;
   width: auto;
-  position: relative;
-  top: -4rem;
-  overflow: hidden;
+  padding: 0 1.5rem;
+}
+
+.name {
+  grid-area: 1 / 2 / 2 / 3;
+  color: #555555;
+  align-self: end;
+}
+
+.last-contacted {
+  grid-area: 1 / 3 / 2 / 4;
+  text-align: end;
+  align-self: end;
+  padding: 0 1.5rem;
 }
 
 .last-text {
-  max-height: 35px;
-  text-overflow: ellipsis;
+  grid-area: 2 / 2 / 3 / 4;
+  max-height: 4rem;
+  padding-top: 0.4rem;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
