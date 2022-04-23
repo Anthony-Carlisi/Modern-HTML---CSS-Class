@@ -6,7 +6,7 @@
 
 .chat-window {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   display: flex;
   flex-direction: column;
   padding-left: 2rem;
@@ -168,7 +168,7 @@
 
 .emoji {
   background: none !important;
-  font-size: 5rem !important;
+  font-size: 7rem !important;
 }
 
 .emoji::before {
@@ -177,23 +177,24 @@
 
 .sms-textarea-container {
   display: inherit;
-  align-items: flex-end;
+  align-items: center;
   height: fit-content;
   border: 2px solid #7a7a78;
-  border-radius: 30px;
+  border-radius: 50px;
+  margin-bottom: 1rem;
 }
-
 .textarea {
   display: block;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   width: 100%;
   overflow: hidden;
   word-wrap: break-word;
   resize: both;
   outline: none;
   border: none;
-  min-height: 3rem;
-  padding: 0 1rem;
+  min-height: 4.5rem;
+  /* line-height: 4rem; */
+  padding: 0 1.5rem;
   line-height: normal;
 }
 
@@ -208,4 +209,5 @@
   /* padding: 1rem 2rem; */
   padding: 0.2rem;
   line-height: 0rem;
+  align-self: flex-end;
 }
