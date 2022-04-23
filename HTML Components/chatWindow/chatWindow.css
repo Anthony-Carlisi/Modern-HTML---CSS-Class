@@ -90,6 +90,10 @@
 .sms-sender .sms-footer {
   align-self: flex-end;
 }
+.message-sender {
+  grid-template-columns: auto min-content;
+  text-align: end;
+}
 
 .sms-header,
 .sms-footer,

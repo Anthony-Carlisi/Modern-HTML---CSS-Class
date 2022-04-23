@@ -7,7 +7,7 @@
   color: #0284d0;
 }
 
-/* button */
+/* Button */
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -145,4 +145,23 @@
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
+}
+
+.btn-primary {
+  color: #28a745;
+  color: #fff;
+}
+
+.btn-secondary {
+  color: #0284d0;
+  color: #fff;
+}
+
+.btn-dark {
+  color: #333;
+  color: #fff;
+}
+.btn-light {
+  color: #f4f4f4;
+  color: #333;
 }

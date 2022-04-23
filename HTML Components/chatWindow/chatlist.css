@@ -91,3 +91,55 @@
 .margin-left-chevron {
   margin-left: 1rem;
 }
+
+.recipient-list {
+  display: grid;
+  grid-template-columns: min-content repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  /* grid-column-gap: 0px;
+  grid-row-gap: 0px; */
+
+  height: 10rem;
+  border-bottom: 1px solid #cacaca;
+
+  line-height: 1;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #9b9b9b;
+
+  /* max-width: 400px; */
+}
+
+.avatar {
+  grid-area: 1 / 1 / 3 / 2;
+  height: 5rem;
+  align-self: center;
+  width: auto;
+  padding: 0 1.5rem;
+}
+
+.name {
+  grid-area: 1 / 2 / 2 / 3;
+  color: #555555;
+  align-self: end;
+}
+
+.last-contacted {
+  grid-area: 1 / 3 / 2 / 4;
+  text-align: end;
+  align-self: end;
+  padding: 0 1.5rem;
+}
+
+.last-text {
+  grid-area: 2 / 2 / 3 / 4;
+  max-height: 4rem;
+  padding-top: 0.4rem;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
