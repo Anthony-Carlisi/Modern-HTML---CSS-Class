@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
 /* general styling */
@@ -13,79 +14,80 @@
       format('woff');
 }
 
-.chat {
+.sms-recipient-list {
   display: flex;
   flex-direction: column;
-  /* max-width: 400px; */
-  margin-left: auto;
-  background-color: #fff;
-  border: 1px solid #e5e5ea;
-  border-radius: 0.25rem;
-}
-
-.body-text {
-  width: 100%;
-  height: 52px;
-  margin-top: 5px;
-  border-bottom: 1px solid #cacaca;
-}
-
-.text-chat {
-  display: flex;
+  font-size: 3rem;
+  /* padding: 2rem; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: #cacaca;
 }
 
-.name {
-  color: #555555;
+.sms-recipient-list-container {
+  display: inherit;
+  padding: 0 2rem;
+
+  flex-direction: row;
 }
 
-.head {
+.border-bottom-line {
+  margin-left: 2rem;
+  border-bottom: #7a7a78 0.1rem solid;
+}
+
+.flex-row-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
 }
 
-.flex-item {
+.sms-recipient-info {
+  margin: 1rem;
+  width: 100%;
   overflow: hidden;
 }
 
-.message {
-  margin-left: 5rem;
-  border-radius: 1.25rem;
-  width: fit-content;
-  padding: 0.5rem 1rem;
-  /* word-wrap: normal; */
-  /* margin-left: 10px; */
-  background-color: #e8e8ea;
-  color: black;
-  max-width: 75%;
-  position: relative;
+.sms-recipient-avatar {
+  display: inherit;
+  width: 7rem;
+  /* margin-right: 1rem; */
+  align-self: center;
 }
 
-.message::before {
-  position: absolute;
-  top: 10px;
-  content: '';
-  width: 0;
-  height: 0;
-  border-top: 10px solid #333;
+.sms-recipient-avatar img {
+  width: 7rem;
+  height: 7rem;
 }
 
-.avatar {
-  background-attachment: fixed;
-  z-index: 0;
-  height: 4rem;
-  width: auto;
-  position: relative;
-  top: -4rem;
+.sms-recipient-last-contacted,
+.sms-recipient-last-sms {
+  color: #7a7a78;
+  font-size: 2.5rem;
+}
+
+.sms-recipient-name {
+  width: 60%;
+  justify-content: flex-start;
+  white-space: nowrap;
   overflow: hidden;
-}
-
-.last-text {
-  max-height: 35px;
   text-overflow: ellipsis;
+}
+
+.sms-recipient-last-contacted {
+  display: inherit;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+.sms-recipient-last-sms {
+  height: 6.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.margin-left-chevron {
+  margin-left: 1rem;
 }

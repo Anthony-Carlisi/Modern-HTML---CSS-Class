@@ -2,125 +2,122 @@
 <html>
 
 <head>
-  <script src="https://kit.fontawesome.com/8e71c0b251.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="chatWindow.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-  <link rel="stylesheet" href="chatWindow.css" />
 </head>
 
 <body>
-  <div class="chat">
 
-    <!-- Group Recipient with Tail and Icon -->
-    <div class="title">Yesterday 10:36 AM</div>
-    <div class="message-recipient group last">
-      <div class="name">Anthony Carlisi</div>
-      <figure>
-        <img class="avatar" src="./user.png" alt="test">
+  <div class="chat-window">
 
-      </figure>
-      <div class="message tail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laborum suscipit
-        perspiciatis.</div>
-      <div class="footer">Received 10:50 AM</div>
+    <div class="sms-title">Yesterday</div>
+
+    <div class="sms-container sms-sender">
+      <div class="sms-message-container">
+        <div class="sms-message">Example T</div>
+      </div>
     </div>
 
-    <!-- Group Recipient with no tail no icon -->
-    <div class="message-recipient group">
-      <div class="name">Anthony Carlisi</div>
-      <img class="avatar" src="./user.png" alt="test">
-      <div class="message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae exercitationem eum eos
-        nulla, sint voluptatem? Amet sed similique dolorem tenetur!</div>
-      <div class="footer">Received 10:50 AM</div>
-
+    <div class="sms-container sms-sender">
+      <!-- <div class="sms-header">Anthony Carlisi</div> -->
+      <div class="sms-message-container">
+        <div class="sms-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam accusamus,
+          doloremque doloribus cum eligendi repudiandae. Quibusdam unde consequatur explicabo eum?</div>
+        <!-- <a class="error" href="#"> <i class="bi bi-exclamation-circle"></i></a> -->
+      </div>
     </div>
 
-    <div class="message-recipient group">
-      <div class="name">Anthony Carlisi</div>
-      <img class="avatar" src="./user.png" alt="test">
-      <div class="message">Lorem, ipsum dolor</div>
-      <div class="footer">Received 10:50 AM</div>
+    <div class="sms-container sms-sender last-sms">
+      <!-- <div class="sms-header">Anthony Carlisi</div> -->
+      <div class="sms-message-container">
+        <div class="sms-message tail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, distinctio.
+        </div>
+        <a class="error" href="#"> <i class="bi bi-exclamation-circle"></i></a>
+      </div>
+      <div class="sms-footer">Sent 10:37 AM</div>
     </div>
 
-    <div class="message-recipient group">
-      <div class="message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, numquam!</div>
-    </div>
-    <div class="message-recipient group last">
-      <img class="avatar" src="./user.png" alt="test">
-      <div class="message tail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci ipsum ut atque, cum
-        excepturi aperiam?</div>
+    <div class="sms-title">Yesterday</div>
+
+    <div class="sms-container sms-recipient group">
+      <div class="sms-header">Anthony Carlisi</div>
+      <div class="sms-message-container">
+        <div class="sms-message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ratione tempora
+          molestias, eligendi debitis modi saepe. Consequatur officia, est, aut laboriosam nulla id, nisi molestiae
+          labore voluptatibus ab voluptatum eum.</div>
+        <div class="sms-avatar"><img class="" src="./user.png" alt=""></div>
+      </div>
     </div>
 
-
-    <div class="title">Yesterday 10:36 AM</div>
-    <div class="message-recipient">
-      <div class="message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae exercitationem eum eos
-        nulla, sint voluptatem? Amet sed similique dolorem tenetur!</div>
-    </div>
-    <div class="message-recipient">
-      <div class="message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae exercitationem eum eos
-        nulla, sint voluptatem? Amet sed similique dolorem tenetur!</div>
-    </div>
-    <div class="message-recipient">
-      <div class="message emoji">😎 😱 😱 😱</div>
-    </div>
-    <div class="message-recipient last">
-      <div class="message tail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae exercitationem eum eos
-        nulla, sint voluptatem? Amet sed similique dolorem tenetur!</div>
-      <div class="footer">Received 10:50 AM</div>
+    <div class="sms-container sms-recipient group">
+      <div class="sms-message-container">
+        <div class="sms-message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, quam?</div>
+        <div class="sms-avatar "><img class="" src="./user.png" alt=""></div>
+      </div>
     </div>
 
-
-
-    <div class="title">Yesterday 10:36 AM</div>
-    <div class="message-sender last">
-      <!-- <div class="name">Anthony Carlisi</div> -->
-      <div class="message tail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo asperiores dicta tenetur
-        est qui porro, alias dolorem, non hic natus laboriosam et! Beatae, voluptates omnis doloribus corporis ex nam id
-        soluta esse sequi! Error obcaecati, ad, tempora cum consequuntur magnam, in distinctio amet sequi asperiores
-        minus quod ex nisi culpa? Ex ipsa velit at quidem non voluptate molestiae perspiciatis, tempore, labore magnam
-        cupiditate tenetur quos harum odio placeat nihil, quisquam quo modi distinctio ad ea iure illum exercitationem.
-        Blanditiis mollitia maxime magnam esse fugit excepturi laboriosam quia omnis! Doloribus perferendis voluptatem
-        repellat ipsam labore nihil nostrum sequi, iusto quo possimus.</div>
-      <a class="error" href="#"> <i class="bi bi-exclamation-circle"></i></a>
-      <div class="footer">Undelivered</div>
-    </div>
-    <div class="title">Yesterday 10:36 AM</div>
-    <div class="message-sender">
-      <!-- <div class="name">Anthony Carlisi</div> -->
-      <div class="message ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, tempore vel fuga amet est
-        eaque! Numquam ex maiores pariatur laudantium fuga at. Laudantium voluptas voluptatum consequatur! Facilis
-        nostrum a ipsa. </div>
-      <!-- <a class="error" href="#"></a> -->
-    </div>
-    <div class="message-sender">
-      <!-- <div class="name">Anthony Carlisi</div> -->
-      <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
-      <!-- <a class="error" href="#"></a> -->
+    <div class="sms-container sms-recipient group last-sms">
+      <div class="sms-message-container">
+        <div class="sms-message tail">Example T</div>
+        <div class="sms-avatar"><img class="display" src="./user.png" alt=""></div>
+      </div>
+      <div class="sms-footer">Received 1:44 PM</div>
     </div>
 
-    <div class="message-sender last">
-      <div class="message tail">Lorem ipsum dolor </div>
-      <div class="footer">Sent 10:50 AM</div>
+    <div class="sms-container sms-recipient">
+      <div class="sms-message-container">
+        <div class="sms-message">G-320189 is your Google verification code</div>
+      </div>
     </div>
 
-    <div class="message-sender last">
-      <div class="message"> <span class="test">Lorem ipsum dolor</span> </div>
-      <div class="footer">Sent 10:50 AM</div>
+    <div class="sms-container sms-recipient">
+      <div class="sms-message-container">
+        <div class="sms-message tail">Lorem ipsum dolor sit amet.</div>
+      </div>
+      <div class="sms-footer">Received 2:03 PM</div>
     </div>
 
-    <div class="title">Yesterday 10:36 AM</div>
-    <div class="message-sender">
-      <div class="message emoji">😎 😱 😱 😱</div>
-      <div class="footer">Sent 10:50 AM</div>
+    <div class="sms-container sms-recipient last-sms">
+      <div class="sms-message-container">
+        <div class="sms-message emoji">😱😎☀️ </div>
+      </div>
+      <div class="sms-footer">Received 10:37 AM</div>
+    </div>
+
+    <div class="sms-container sms-sender">
+      <div class="sms-message-container">
+        <div class="sms-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ipsa vel optio?
+        </div>
+        <a class="error" href="#"> <i class="bi bi-exclamation-circle"></i></a>
+      </div>
+    </div>
+
+    <div class="sms-container sms-sender">
+      <div class="sms-message-container">
+        <div class="sms-message emoji">😱😎☀️
+        </div>
+        <a class="error" href="#"> <i class="bi bi-exclamation-circle"></i></a>
+      </div>
+    </div>
+
+    <div class="sms-container sms-sender last-sms">
+      <div class="sms-header">Anthony Carlisi</div>
+      <div class="sms-message-container">
+        <div class="sms-message tail">Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+      </div>
+
+
+    </div>
+    <!-- <textarea class="sms-send" type="text" name="sms-send" placeholder="Message" contenteditable></textarea> -->
+    <div class="sms-textarea-container">
+      <span class="textarea" role="textbox" contenteditable></span>
+      <i class="bi bi-arrow-up-circle sms-send"></i>
     </div>
 
 
   </div>
-
-  <form action="submit">
-    <input class="text-message" type="text" placeholder="Message">
-  </form>
-
 </body>
 
 </html>
