@@ -69,7 +69,7 @@
 }
 
 .sms-recipient-last-sms {
-  height: 6.5rem;
+  height: 6rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;

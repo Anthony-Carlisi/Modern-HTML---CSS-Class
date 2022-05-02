@@ -2,7 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
+
+/* Utility Classes */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mb-3rem {
+  margin-bottom: 3rem !important;
+}
+
+/* Shared */
 
 .chat-window {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -10,13 +25,12 @@
   display: flex;
   flex-direction: column;
   padding-left: 2rem;
-  padding-top: 2rem;
+  padding-top: 14rem;
   padding-right: 2rem;
 }
 
 .sms-title {
   text-align: center;
-  margin-bottom: 3rem;
 }
 
 .sms-container {
@@ -26,140 +40,11 @@
   margin: 0.2rem 0;
 }
 
-.sms-recipient {
-  align-self: flex-start;
-}
-
-.sms-recipient .sms-message {
-  background-color: #e8e8ea;
-  color: black;
-}
-
-.sms-sender {
-  align-self: flex-end;
-}
-
-.sms-recipient .sms-message-container {
-  display: inherit;
-  flex-direction: row-reverse;
-  align-self: flex-start;
-}
-
-.sms-sender .sms-message-container {
-  display: inherit;
-  flex-direction: row;
-  align-self: flex-end;
-}
-
-.error {
-  align-self: center;
-  color: red;
-  margin-left: 1rem;
-  font-size: 4rem;
-}
-
-.sms-avatar {
-  display: inherit;
-  width: 4rem;
-  margin-right: 1rem;
-  align-self: flex-end;
-}
-
-.sms-avatar img {
-  display: none;
-  width: 4rem;
-  height: 4rem;
-}
-
-.group .sms-header,
-.group .sms-footer {
-  margin-left: 5rem;
-}
-
-.sms-sender .sms-header,
-.sms-sender .sms-footer {
-  align-self: flex-end;
-}
-.message-sender {
-  grid-template-columns: auto min-content;
-  text-align: end;
-}
-
-.sms-header,
-.sms-footer,
-.sms-title {
-  padding: 0 1.4rem;
-  color: #7a7a78;
-  font-size: 1.8rem;
-}
-
 .sms-message {
   width: fit-content;
   position: relative;
   border-radius: 2.5rem;
   padding: 12px 20px;
-}
-
-.sms-sender .sms-message {
-  margin-left: auto;
-  color: white;
-  background: #248bf5;
-}
-
-.sms-recipient .sms-message.tail:before {
-  content: '';
-  position: absolute;
-  z-index: 0;
-  bottom: 0;
-  left: -15px;
-  height: 40px;
-  width: 35px;
-  background: #e8e8ea;
-  /* background: red; */
-  border-bottom-right-radius: 25px;
-}
-.sms-recipient .sms-message.tail:after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: -16px;
-  height: 41px;
-  width: 16px;
-  background: white;
-  /* background: green; */
-  border-bottom-right-radius: 30px;
-}
-
-.sms-sender .sms-message.tail:before {
-  content: '';
-  position: absolute;
-  z-index: 0;
-  bottom: 0;
-  right: -15px;
-  height: 40px;
-  width: 35px;
-  /* background: red; */
-  border-bottom-left-radius: 25px;
-  background: #248bf5;
-  /* background: green; */
-}
-
-.sms-sender .sms-message.tail:after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  right: -16px;
-  height: 41px;
-  width: 16px;
-  background: white;
-  /* background: green; */
-  border-bottom-left-radius: 30px;
-}
-
-.last-sms {
-  margin-bottom: 3rem;
 }
 
 .display {
@@ -175,13 +60,138 @@
   content: none;
 }
 
+/*  */
+
+/* SMS Recipient */
+.sms-recipient {
+  align-self: flex-start;
+}
+
+.sms-recipient .sms-message-container {
+  display: inherit;
+  flex-direction: row-reverse;
+  align-self: flex-start;
+}
+
+.sms-recipient .sms-message {
+  background-color: #e8e8ea;
+}
+
+.sms-recipient .sms-message.tail:before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: -15px;
+  height: 40px;
+  width: 35px;
+  background: #e8e8ea;
+  border-bottom-right-radius: 25px;
+}
+
+.sms-recipient .sms-message.tail:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: -16px;
+  height: 41px;
+  width: 16px;
+  background: white;
+  border-bottom-right-radius: 30px;
+}
+
+.sms-avatar {
+  display: inherit;
+  width: 4rem;
+  margin-right: 1rem;
+  align-self: flex-end;
+}
+
+.sms-avatar img {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.group .sms-header,
+.group .sms-footer {
+  margin-left: 5rem;
+}
+
+/*  */
+
+/* SMS Sender */
+.sms-sender {
+  align-self: flex-end;
+}
+
+.sms-sender .sms-message-container {
+  display: inherit;
+  flex-direction: row;
+  align-self: flex-end;
+}
+
+.error {
+  align-self: center;
+  color: red;
+  margin-left: 1rem;
+  font-size: 4rem;
+}
+
+.sms-sender .sms-header,
+.sms-sender .sms-footer {
+  align-self: flex-end;
+}
+
+.sms-header,
+.sms-footer,
+.sms-title {
+  padding: 0 1.4rem;
+  color: #7a7a78;
+  font-size: 1.8rem;
+}
+
+.sms-sender .sms-message {
+  margin-left: auto;
+  color: white;
+  background: #2697fd;
+}
+
+.sms-sender .sms-message.tail:before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: -15px;
+  height: 40px;
+  width: 35px;
+  border-bottom-left-radius: 25px;
+  background: #2697fd;
+}
+
+.sms-sender .sms-message.tail:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: -16px;
+  height: 41px;
+  width: 16px;
+  background: white;
+  border-bottom-left-radius: 30px;
+}
+
+/* SMS Input Bar */
 .sms-textarea-container {
   display: inherit;
-  align-items: center;
+  width: 100%;
   height: fit-content;
-  border: 2px solid #7a7a78;
-  border-radius: 50px;
-  margin-bottom: 1rem;
+  align-items: center;
+  border: 3px solid #7a7a78;
+  border-radius: 40px;
 }
 .textarea {
   display: block;
@@ -191,11 +201,7 @@
   word-wrap: break-word;
   resize: both;
   outline: none;
-  border: none;
-  min-height: 4.5rem;
-  /* line-height: 4rem; */
-  padding: 0 1.5rem;
-  line-height: normal;
+  padding: 0 1.6rem;
 }
 
 .textarea[contenteditable]:empty::before {
@@ -204,10 +210,90 @@
 }
 
 .sms-send {
-  font-size: 3rem;
+  font-size: 4rem;
   position: relative;
-  /* padding: 1rem 2rem; */
   padding: 0.2rem;
   line-height: 0rem;
   align-self: flex-end;
+  color: #2697fd;
+}
+
+.sms-send-wrapper {
+  display: inherit;
+  margin-bottom: 1rem;
+}
+
+.sms-action-icon {
+  font-size: 4rem;
+  position: relative;
+  padding: 0.2rem 2rem 0.2rem 0.2rem;
+  line-height: 0rem;
+  align-self: flex-end;
+  color: #7a7a78;
+}
+/*  */
+
+/* SMS Header Nav */
+
+.chat-window-wrapper {
+  background-color: #f5f5f5;
+  border-bottom: 0.2rem #7a7a78 solid;
+  position: fixed;
+  opacity: 95%;
+  width: 100%;
+  z-index: 10;
+  padding: 0 2rem;
+  font-size: 2rem;
+  justify-self: center;
+}
+
+.chat-window-nav {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, auto) 1fr;
+  align-items: center;
+  min-height: 12rem;
+}
+
+.sms-back-arrow {
+  font-size: 3rem;
+  color: #2697fd;
+  margin-right: auto;
+}
+
+.avatar {
+  display: inline-block;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 6.25rem;
+}
+
+.avatar:not(:first-child) {
+  margin-left: -60px;
+  -webkit-mask: radial-gradient(
+    circle 55px at 5px 50%,
+    transparent 99%,
+    #fff 100%
+  );
+  mask: radial-gradient(circle 55px at 5px 50%, transparent 99%, #fff 100%);
+}
+
+.avatar img {
+  width: 100%;
+  display: block;
+}
+
+.chat-window-drawer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  color: #7a7a78;
+}
+.flex-column {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 2rem;
+  line-height: 1;
 }

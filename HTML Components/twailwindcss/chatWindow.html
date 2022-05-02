@@ -8,55 +8,10 @@
 </head>
 
 <body>
-  <div class="chat-window-wrapper">
-    <div class="chat-window-nav">
-      <a class="sms-back-arrow" href="#">
-        <i class="bi bi-chevron-left"></i>
-        <i class="bi bi-circle"></i>
-      </a>
-      <div class="flex-center">
-        <div class="avatars">
-          <span class="avatar">
-            <img src="https://picsum.photos/70">
-          </span>
-          <!-- <span class="avatar">
-            <img src="https://picsum.photos/80">
-          </span>
-          <span class="avatar">
-            <img src="https://picsum.photos/90">
-          </span>
-          <span class="avatar">
-            <img src="https://picsum.photos/100">
-          </span> -->
-        </div>
-        <div class="">Vincenzo Carlisi <i class="bi bi-chevron-right"></i></div>
-      </div>
-    </div>
-
-    <!-- Chat Drawer -->
-    <!-- <div class="chat-window-drawer">
-      <div class="flex-column">
-        <i class="bi bi-telephone-fill"></i>
-        <div class="chat-window-drawer-label">call</div>
-      </div>
-      <div class="flex-column">
-        <i class="bi bi-app"></i>
-        <div class="chat-window-drawer-label">profile</div>
-      </div>
-      <div class="flex-column">
-        <i class="bi bi-info-circle-fill"></i>
-        <div class="chat-window-drawer-label">info</div>
-      </div>
-    </div> -->
-
-
-  </div>
 
   <div class="chat-window">
 
-    <div class="sms-title mb-3rem">Yesterday</div>
-
-
+    <div class="sm:text-center sm:text-3xl">Yesterday</div>
 
     <div class="sms-container sms-sender">
       <div class="sms-message-container">
@@ -73,7 +28,7 @@
       </div>
     </div>
 
-    <div class="sms-container sms-sender mb-3rem">
+    <div class="sms-container sms-sender last-sms">
       <!-- <div class="sms-header">Anthony Carlisi</div> -->
       <div class="sms-message-container">
         <div class="sms-message tail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, distinctio.
@@ -83,7 +38,7 @@
       <div class="sms-footer">Sent 10:37 AM</div>
     </div>
 
-    <div class="sms-title mb-3rem">Yesterday</div>
+    <div class="sms-title">Yesterday</div>
 
     <div class="sms-container sms-recipient group">
       <div class="sms-header">Anthony Carlisi</div>
@@ -91,7 +46,7 @@
         <div class="sms-message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ratione tempora
           molestias, eligendi debitis modi saepe. Consequatur officia, est, aut laboriosam nulla id, nisi molestiae
           labore voluptatibus ab voluptatum eum.</div>
-        <div class="sms-avatar"><img class="" src="https://picsum.photos/50" alt=""></div>
+        <div class="sms-avatar"><img class="" src="./user.png" alt=""></div>
       </div>
     </div>
 
@@ -102,10 +57,10 @@
       </div>
     </div>
 
-    <div class="sms-container sms-recipient group mb-3rem">
+    <div class="sms-container sms-recipient group last-sms">
       <div class="sms-message-container">
         <div class="sms-message tail">Example T</div>
-        <div class="sms-avatar"><img class="display" src="https://picsum.photos/60" alt=""></div>
+        <div class="sms-avatar"><img class="display" src="./user.png" alt=""></div>
       </div>
       <div class="sms-footer">Received 1:44 PM</div>
     </div>
@@ -123,7 +78,7 @@
       <div class="sms-footer">Received 2:03 PM</div>
     </div>
 
-    <div class="sms-container sms-recipient mb-3rem">
+    <div class="sms-container sms-recipient last-sms">
       <div class="sms-message-container">
         <div class="sms-message emoji">😱😎☀️ </div>
       </div>
@@ -146,21 +101,19 @@
       </div>
     </div>
 
-    <div class="sms-container sms-sender mb-3rem">
+    <div class="sms-container sms-sender last-sms">
       <div class="sms-header">Anthony Carlisi</div>
       <div class="sms-message-container">
         <div class="sms-message tail">Lorem ipsum dolor sit amet consectetur adipisicing.
         </div>
       </div>
+
+
     </div>
 
-
-    <div class="sms-send-wrapper">
-      <a class="sms-action-icon" href="#"><i class="bi bi-camera-fill"></i></a>
-      <div class="sms-textarea-container">
-        <span class="textarea" role="textbox" contenteditable></span>
-        <i class="bi bi-arrow-up-circle-fill sms-send"></i>
-      </div>
+    <div class="sms-textarea-container">
+      <span class="textarea" role="textbox" contenteditable></span>
+      <i class="bi bi-arrow-up-circle sms-send"></i>
     </div>
 
 

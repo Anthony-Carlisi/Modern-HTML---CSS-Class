@@ -7,31 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    .textarea {
-      border: 1px solid #ccc;
-      font-family: inherit;
-      font-size: inherit;
-      padding: 1px 6px;
-    }
-
-
-    .textarea {
-      display: block;
-      width: fit-content;
+    .avatar {
+      display: inline-block;
+      border-radius: 50%;
       overflow: hidden;
-      resize: both;
-      min-height: 40px;
-      line-height: 20px;
+      width: 100px;
     }
 
-    .textarea[contenteditable]:empty::before {
-      content: "Placeholder still possible";
-      color: gray;
+    .avatar:not(:first-child) {
+      margin-left: -60px;
+      -webkit-mask: radial-gradient(circle 55px at 5px 50%, transparent 99%, #fff 100%);
+      mask: radial-gradient(circle 55px at 5px 50%, transparent 99%, #fff 100%);
     }
 
-    /* Just for demo */
-    * {
-      box-sizing: border-box;
+    .avatar img {
+      width: 100%;
+      display: block;
+    }
+
+    body {
+      background: pink
     }
   </style>
   <script></script>
@@ -39,9 +34,20 @@
 
 <body>
 
-
-
-  <span class="textarea" role="textbox" contenteditable></span></p>
+  <div class="avatars">
+    <span class="avatar">
+      <img src="https://picsum.photos/70">
+    </span>
+    <span class="avatar">
+      <img src="https://picsum.photos/80">
+    </span>
+    <span class="avatar">
+      <img src="https://picsum.photos/90">
+    </span>
+    <span class="avatar">
+      <img src="https://picsum.photos/100">
+    </span>
+  </div>
 
 
 </body>

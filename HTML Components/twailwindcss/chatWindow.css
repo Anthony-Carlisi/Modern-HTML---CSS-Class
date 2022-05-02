@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.chat-window {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+
+.sms-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sms-container {
+  display: inherit;
+  flex-direction: column;
+  max-width: 75%;
+  margin: 0.2rem 0;
+}
+
+.sms-recipient {
+  align-self: flex-start;
+}
+
+.sms-recipient .sms-message {
+  background-color: #e8e8ea;
+  color: black;
+}
+
+.sms-sender {
+  align-self: flex-end;
+}
+
+.sms-recipient .sms-message-container {
+  display: inherit;
+  flex-direction: row-reverse;
+  align-self: flex-start;
+}
+
+.sms-sender .sms-message-container {
+  display: inherit;
+  flex-direction: row;
+  align-self: flex-end;
+}
+
+.error {
+  align-self: center;
+  color: red;
+  margin-left: 1rem;
+  font-size: 4rem;
+}
+
+.sms-avatar {
+  display: inherit;
+  width: 4rem;
+  margin-right: 1rem;
+  align-self: flex-end;
+}
+
+.sms-avatar img {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+}
+
+.group .sms-header,
+.group .sms-footer {
+  margin-left: 5rem;
+}
+
+.sms-sender .sms-header,
+.sms-sender .sms-footer {
+  align-self: flex-end;
+}
+
+.sms-header,
+.sms-footer,
+.sms-title {
+  padding: 0 1.4rem;
+  color: #7a7a78;
+  font-size: 1.8rem;
+}
+
+.sms-message {
+  width: fit-content;
+  position: relative;
+  border-radius: 2.5rem;
+  padding: 12px 20px;
+}
+
+.sms-sender .sms-message {
+  margin-left: auto;
+  color: white;
+  background: #248bf5;
+}
+
+.sms-recipient .sms-message.tail:before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: -15px;
+  height: 40px;
+  width: 35px;
+  background: #e8e8ea;
+  border-bottom-right-radius: 25px;
+}
+.sms-recipient .sms-message.tail:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: -16px;
+  height: 41px;
+  width: 16px;
+  background: white;
+  border-bottom-right-radius: 30px;
+}
+
+.sms-sender .sms-message.tail:before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: -15px;
+  height: 40px;
+  width: 35px;
+  border-bottom-left-radius: 25px;
+  background: #248bf5;
+}
+
+.sms-sender .sms-message.tail:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: -16px;
+  height: 41px;
+  width: 16px;
+  background: white;
+  border-bottom-left-radius: 30px;
+}
+
+.last-sms {
+  margin-bottom: 3rem;
+}
+
+.display {
+  display: block !important;
+}
+
+.emoji {
+  background: none !important;
+  font-size: 7rem !important;
+}
+
+.emoji::before {
+  content: none;
+}
+
+.sms-textarea-container {
+  display: inherit;
+  align-items: center;
+  border: 3px solid #7a7a78;
+  border-radius: 40px;
+  margin-bottom: 1rem;
+}
+.textarea {
+  display: block;
+  font-size: 2.8rem;
+  width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+  resize: both;
+  outline: none;
+  padding: 0 1.6rem;
+}
+
+.textarea[contenteditable]:empty::before {
+  content: 'Message';
+  color: #7a7a78;
+}
+
+.sms-send {
+  font-size: 4rem;
+  position: relative;
+  padding: 0.2rem;
+  line-height: 0rem;
+  align-self: flex-end;
+}
